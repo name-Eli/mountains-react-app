@@ -39,8 +39,17 @@
 
     li a {
         font-size: 0.9em;
-        color: black;
         font-style: italic;
         text-decoration: underline;
     }
+
+    .activeTab {
+        font-weight: bold;
+    }
+}
+
+
+.home {
+    color: white;
+    background: rgba(0, 0, 0, 0);
 }

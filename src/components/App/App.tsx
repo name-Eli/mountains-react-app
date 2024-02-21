@@ -29,17 +29,17 @@ function App() {
 
   return (
     <>
-      {/* <div className="background" id="backgroundHome"></div> */}
+      <div className="background"></div>
 
       <NavBar />
 
-      <div className="content" id="content">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a sample text. You can add any content here.</p>
+      <div className="content">
+        <h1 className='losangeles'>LOSANGELES</h1>
+        <h1 className='Mountains'>MOUNTAINS</h1>
+
+
       </div>
 
-      <div className="footer" id="footer">
-      </div >
     </>
   )
 }

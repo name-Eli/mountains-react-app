@@ -1,8 +1,4 @@
-.content {
-    padding-top: 20px;
-    padding-inline: 20%;
-    font-size: 1em;
-    text-align: center;
+.historyContent {
     color: black;
 
     .title {
@@ -10,15 +6,7 @@
     }
 }
 
-.background {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.historyBackground {
     background-image: url('../../assets/history-background.jpg');
 }
 

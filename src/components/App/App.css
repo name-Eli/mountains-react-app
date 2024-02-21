@@ -7,12 +7,25 @@
     top: 0;
     left: 0;
     z-index: -1;
-    /* background-image: url('https://cff2.earth.com/uploads/2023/06/02100547/Mountain-2-960x640.jpg'); */
+    background-image: url('../../assets/home-background.jpg');
 }
 
 .content {
-    padding: 50px;
     color: #ffffff;
-    font-size: 20px;
+    padding-top: 20px;
+    padding-inline: 20%;
+    font-size: 1em;
     text-align: center;
+}
+
+.losangeles {
+    color: #4d4d4d;
+    font-size: 5em;
+    margin: 0;
+}
+
+.Mountains {
+    color: #414f6b;
+    font-size: 5em;
+    margin: 0;
 }
