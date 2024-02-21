@@ -1,5 +1,6 @@
 import './App.css'
-import Section from '../Section.tsx';
+import Section from '../Section/Section.tsx';
+import NavBar from '../NavBar/NavBar.tsx';
 
 
 
@@ -35,13 +36,7 @@ function App() {
 
       <div className="background" id="backgroundAnotherPage" style={{ display: 'none' }}></div>
 
-      <nav className="navbar">
-        <div className="logo">Your Logo</div>
-        <ul>
-          <li><a href="#" >Home</a></li>
-          <li><a href="#" >Tab 2</a></li>
-        </ul>
-      </nav>
+      <NavBar tabs={["Tab1", "Tab2"]} />
 
       <div className="content" id="content">
         <h1>Welcome to Our Website</h1>

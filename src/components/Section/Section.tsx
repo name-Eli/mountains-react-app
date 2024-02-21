@@ -1,3 +1,4 @@
+import './Section.css';
 
 interface Props {
     id: string;

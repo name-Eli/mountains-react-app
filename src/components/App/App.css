@@ -18,42 +18,6 @@ html {
     background-image: url('https://cff2.earth.com/uploads/2023/06/02100547/Mountain-2-960x640.jpg');
 }
 
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    padding: 20px;
-}
-
-.navbar li {
-    margin-left: 20px;
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-}
-
 .content {
     padding: 50px;
     color: #ffffff;
@@ -68,6 +32,7 @@ html {
     padding-bottom: 20px;
     color: #ffffff;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel {
@@ -114,57 +79,4 @@ html {
 body {
     margin: 0;
     font-family: Arial;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 100%);
-    overflow: hidden;
-    scroll-behavior: smooth;
-
-    section {
-        width: 100%;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-
-        .item {
-            position: relative;
-            padding: 0 2px;
-            transition: 2.1 all;
-
-
-            img {
-                height: 192px;
-                width: 340px;
-            }
-        }
-
-        .arrow__btn {
-            position: absolute;
-            color: #fff;
-            text-decoration: none;
-            font-size: 6em;
-            background: rgb(0, 0, 0);
-            width: 80px;
-            padding: 20px;
-            text-align: center;
-            z-index: 1;
-        }
-
-        .left-arrow {
-            top: 0;
-            bottom: 0;
-            left: 0;
-            background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        }
-
-        .right-arrow {
-            top: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
-        }
-
-    }
 }
