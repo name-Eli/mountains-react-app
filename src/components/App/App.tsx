@@ -1,8 +1,5 @@
 import './App.css'
-import Section from '../Section/Section.tsx';
 import NavBar from '../NavBar/NavBar.tsx';
-
-
 
 function App() {
 
@@ -32,11 +29,9 @@ function App() {
 
   return (
     <>
-      <div className="background" id="backgroundHome"></div>
+      {/* <div className="background" id="backgroundHome"></div> */}
 
-      <div className="background" id="backgroundAnotherPage" style={{ display: 'none' }}></div>
-
-      <NavBar tabs={["Tab1", "Tab2"]} />
+      <NavBar />
 
       <div className="content" id="content">
         <h1>Welcome to Our Website</h1>
@@ -44,11 +39,6 @@ function App() {
       </div>
 
       <div className="footer" id="footer">
-        <div className="wrapper">
-          <Section id='section1' prevSectionId='#section3' nextSectionId='#section2' photos={Photos.section1} />
-          <Section id='section2' prevSectionId='#section1' nextSectionId='#section3' photos={Photos.section2} />
-          <Section id='section3' prevSectionId='#section2' nextSectionId='#section1' photos={Photos.section3} />
-        </div>
       </div >
     </>
   )

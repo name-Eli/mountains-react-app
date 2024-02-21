@@ -1,14 +1,15 @@
 import logo from '../../assets/logo.jpg'
 import './NavBar.css';
 
-interface Props {
-    tabs: string[];
-}
+const NavBar = () => {
 
-const NavBar = ({ tabs }: Props) => {
+    const tabs = ["History", "Team"]
     return (
         <nav className="navbar">
-            <img className="logo" src={logo} />
+            <div className='logoContainer'>
+                <img className="logo" src={logo} />
+                <span className="logoName">LOSANGELES MOUNTAINS</span>
+            </div>
             <ul>
                 {
                     tabs.map((tab, index) =>

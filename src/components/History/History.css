@@ -1,0 +1,69 @@
+.content {
+    padding-top: 20px;
+    padding-inline: 20%;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+
+    .title {
+        color: darkslategrey;
+    }
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('../../assets/history-background.jpg');
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel img {
+    max-width: 100px;
+    margin: 0 10px;
+}
+
+.list-wrapper {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+
+    width: 3rem;
+    height: 3rem;
+
+    transform: translateY(-50%);
+}
+
+.button--previous {
+    left: 1.5rem;
+
+    transform: rotate(180deg);
+}
+
+.button--next {
+    right: 1.5rem;
+}

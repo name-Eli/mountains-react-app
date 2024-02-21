@@ -2,32 +2,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-}
+    background-color: white;
 
-.navbar .logo {
-    padding: 10px;
-    border-radius: 100%;
-    height: 50px;
-}
+    .logoContainer {
+        display: flex;
+        align-items: center;
+    }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    padding: 20px;
-}
+    .logo {
+        margin: 10px;
+        border-radius: 100%;
+        border: solid 1px gray;
+        height: 50px;
+    }
 
-.navbar li {
-    margin-left: 20px;
-}
+    .logoName {
+        width: 20px;
+        display: inline-flex;
+        color: darkslategrey;
+    }
 
-.navbar li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        padding: 20px;
+    }
+
+    li {
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    li a {
+        font-size: 0.9em;
+        color: black;
+        font-style: italic;
+        text-decoration: underline;
+    }
 }
