@@ -1,10 +1,11 @@
+import { CarouselPhoto } from '../History/History';
 import './Section.css';
 
 interface Props {
     id: string;
     prevSectionId: string;
     nextSectionId: string;
-    photos: string[];
+    photos: CarouselPhoto[];
 
 }
 
@@ -14,9 +15,9 @@ const Section = ({ id, prevSectionId, nextSectionId, photos }: Props) => {
             <a href={prevSectionId} className="arrow__btn left-arrow">‹</a>
 
             {
-                photos.map((photo, index) =>
+                photos.map(photo =>
                     <div className="item">
-                        <img key={index} src={photo} />
+                        <img key={photo.id} src={photo.url} />
                     </div>
                 )
             }
