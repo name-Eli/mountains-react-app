@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/logo.jpg'
+
 import './NavBar.css';
+import Logo from '../Logo/Logo';
 
 const NavBar = () => {
 
@@ -10,10 +11,8 @@ const NavBar = () => {
 
     return (
         <nav className={`${location.pathname === '/' ? 'home' : ''} navbar`}>
-            <Link className='logoContainer' to={'/'}>
-                <img className="logo" src={logo} />
-                {location.pathname !== '/' && <span className="logoName">LOSANGELES MOUNTAINS</span>}
-            </Link>
+
+            <Logo />
 
             <ul>
                 {

@@ -6,25 +6,6 @@
     z-index: 1;
     background-color: white;
 
-    .logoContainer {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .logo {
-        margin: 10px;
-        border-radius: 100%;
-        border: solid 1px gray;
-        height: 50px;
-    }
-
-    .logoName {
-        width: 20px;
-        display: inline-flex;
-        color: darkslategrey;
-    }
-
     ul {
         list-style: none;
         margin: 0;
