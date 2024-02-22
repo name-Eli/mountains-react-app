@@ -1,0 +1,45 @@
+.teamTab1Background {
+    background-image: url('../../assets/teamTab1-background.jpg');
+}
+
+.teamTab2Background {
+    background-image: url('../../assets/teamTab2-background.jpg');
+}
+
+.teamContent {
+    color: black;
+
+    .title {
+        color: #2e2c2c;
+    }
+}
+
+.footer {
+    height: 50px;
+    background-color: #414f6b;
+
+    p {
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 0.9em;
+        text-align: end;
+        padding: 10px;
+    }
+}
+
+.tabs {
+    background-color: #414f6b;
+    padding: 5px;
+    padding-inline: 20%;
+
+    .tab {
+        color: aliceblue;
+        cursor: pointer;
+        text-decoration: underline;
+        padding-right: 20px;
+    }
+
+    .activeTab {
+        font-weight: bold;
+    }
+}

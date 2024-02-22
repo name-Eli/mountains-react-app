@@ -39,7 +39,7 @@ function History() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
             </div>
 
-            <div className="footer" id="footer">
+            <div className="footer">
                 <div className="wrapper">
                     <Section id='section1' prevSectionId='#section3' nextSectionId='#section2' photos={Photos.section1} />
                     <Section id='section2' prevSectionId='#section1' nextSectionId='#section3' photos={Photos.section2} />
