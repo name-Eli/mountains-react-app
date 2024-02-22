@@ -9,6 +9,7 @@
     .logoContainer {
         display: flex;
         align-items: center;
+        text-decoration: none;
     }
 
     .logo {
@@ -52,4 +53,8 @@
 .home {
     color: white;
     background: rgba(0, 0, 0, 0);
+}
+
+.link {
+    color: inherit;
 }

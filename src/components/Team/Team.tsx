@@ -104,7 +104,7 @@ const Team = () => {
             </div>
 
 
-            <div className="footer">
+            <div className="footer footerTeam">
                 <p>COPYRIGHT 2024. ALL RIGHTS RESERVED.</p>
             </div>
 
