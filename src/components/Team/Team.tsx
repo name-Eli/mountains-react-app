@@ -1,7 +1,8 @@
 import { useState } from "react";
 import './Team.css'
 import NavBar from "../NavBar/NavBar";
-import Schedule, { ScheduleEvent } from "../Schedule/Schedule";
+import events from '../Data/events'
+import Schedule from "../Schedule/Schedule";
 
 export interface Tab {
     id: number,
@@ -12,77 +13,7 @@ const Team = () => {
 
     const tabs = { tab1: { id: 1, name: 'Mountain 1' }, tab2: { id: 2, name: 'Mountain 2' } }
 
-    const events: ScheduleEvent[] = [
-        {
-            id: 1,
-            date: '25 Nov 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab1
-        },
-        {
-            id: 2,
-            date: '13 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab1
-        },
-        {
-            id: 3,
-            date: '18 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab1
-        },
-        {
-            id: 4,
-            date: '25 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab1
-        },
-        {
-            id: 5,
-            date: '16 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 6,
-            date: '20 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 7,
-            date: '28 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 8,
-            date: '19 Mar 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 9,
-            date: '20 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 10,
-            date: '28 Feb 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-        {
-            id: 11,
-            date: '19 Mar 2024',
-            description: 'Vestibulum viverra',
-            tab: tabs.tab2
-        },
-    ]
-
     const [activeTab, setActiveTab] = useState<Tab>(tabs.tab1)
-
 
     return (
         <>
@@ -100,7 +31,7 @@ const Team = () => {
                 <h1 className='title'>{activeTab.name}</h1>
                 <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
 
-                <Schedule events={events.filter(event => event.tab.id === activeTab.id)} />
+                <Schedule events={events.filter(event => event.tabId === activeTab.id)} />
             </div>
 
 

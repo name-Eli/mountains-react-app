@@ -1,12 +1,5 @@
-import { Tab } from '../Team/Team';
+import { ScheduleEvent } from '../Data/events';
 import './Schedule.css'
-
-export interface ScheduleEvent {
-    id: number;
-    date: string;
-    description: string;
-    tab: Tab;
-}
 
 interface Props {
     events: ScheduleEvent[]

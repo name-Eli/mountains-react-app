@@ -1,4 +1,5 @@
-import { CarouselPhoto } from '../History/History';
+
+import { CarouselPhoto } from '../Data/carouselPhoto';
 import './Section.css';
 
 interface Props {
