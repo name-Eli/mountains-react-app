@@ -18,14 +18,20 @@
     text-align: center;
 }
 
-.losangeles {
+.titleHomePage {
     color: #4d4d4d;
     font-size: 5em;
     margin: 0;
+
+    @media screen and (max-width: 800px) {
+        font-size: 3em;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 2em;
+    }
 }
 
-.Mountains {
+.mountain {
     color: #414f6b;
-    font-size: 5em;
-    margin: 0;
 }

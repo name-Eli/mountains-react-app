@@ -10,8 +10,8 @@ function App() {
       <NavBar />
 
       <div className="content">
-        <h1 className='losangeles'>LOSANGELES</h1>
-        <h1 className='Mountains'>MOUNTAINS</h1>
+        <h1 className='titleHomePage'>LOSANGELES</h1>
+        <h1 className='titleHomePage mountain'>MOUNTAINS</h1>
 
 
       </div>
