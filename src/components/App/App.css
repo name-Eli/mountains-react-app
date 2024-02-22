@@ -16,6 +16,10 @@
     padding-inline: 20%;
     font-size: 1em;
     text-align: center;
+
+    @media screen and (max-width: 400px) {
+        padding-inline: 10%;
+    }
 }
 
 .titleHomePage {
